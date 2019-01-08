@@ -5,7 +5,7 @@ var mysql = require("mysql");
 var app = express();
 
 // Specify the port.
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 // MySQL DB Connection Information (remember to change this with our specific credentials)
 var connection = mysql.createConnection({
@@ -45,4 +45,6 @@ var allRows = "";
 });
 
 // Initiate the listener.
-app.listen(port);
+app.listen(port, function() {
+  console.log("Listening on port:%s", port);
+});
