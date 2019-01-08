@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang ="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Elder Scrolls Gladiator</title>
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+body
+{
+	background-color: lightblue;
+}
+
+#enemy_x
+{
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  z-index: -1;
+}
+
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="characters.js"></script>
+
+
+</head>
+
+<body>
+<div class = "container">
+
+<div class = "row">
+
+<div class = "col-lg-6">
+<img src="orc.png" alt="orc" style="float:left;">
+</div>
+
+<div class = "col-lg-6">
+<img src="rat.png" id = "opponent" alt="rat" style="float:right;">
+<img src="x.png" id = "enemy_x" width="300px">
+</div>
+
+</div>
+
+<div class = "row">
+<!-- 
+PLAYER SIDE**** -->
+<div class = "col-lg-2">
+<button onclick="attack();">Attack!</button>
+</div>
+
+<div class = "col-lg-2">
+Name: 
+</div>
+
+<div class = "col-lg-2">
+Health: 
+</div>
+<!-- **** -->
+
+<!-- OPPONENT SIDE*** -->
+<div class = "col-lg-2">
+
+</div>
+
+<div class = "col-lg-2">
+Name:
+</div>
+
+<div class = "col-lg-2">
+Health:
+</div>
+<!-- **** -->
+
+</div>
+
+</div>
+
+
+</body>
+</html>
